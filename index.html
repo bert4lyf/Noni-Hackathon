@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Docs</title>
+    <!--Fav Icon-->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <!-- Logo -->
+            <a href="index.html" class="logo"><strong>Chat<span>Docs</span></strong></a>
+        <div class="menu-containor">
+            <div class="menu" id="menu">
+                <a href="#">HOME</a>
+                <a href="#">PRICING</a>
+                <a href="#">ABOUT</a>
+              
+            </div>
+            <div class="navbar-icon">
+                <i class="fa-solid fa-basket-shopping basket" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-magnifying-glass glass" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-bars" style="color: #ffffff;" id="bars"></i>
+            </div>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="hero-contant">
+            <h3>Chat with your Documents powered by AI</h3>
+            <h1>Summarize, <span>Edit&</span> Download</h1>
+            <p>Join a vibrant community of millions of students, researhers and professionals to explore documents, ask questions and again insights Faster than ever before
+            </p>
+            <button>LOGIN/SIGNUP</button>
+        </div>
+        <div class="hero-image">
+            <img src="#" alt="">
+        </div>
+    </div>
+    
+
+
+     <!--==================== FOOTER ====================-->
+     <footer>
+        <div class="newsletter">
+            <h3>Our <span>NewsBox</span></h3>
+            <div>
+                <input type="text" placeholder="Enter Your Email">
+                <button a href="">SUBSCRIBE</button>
+            </div>
+
+        </div>
+        <div class="container">
+            
+            <div class="row">
+                <div class="col">
+                    
+                    <ul>
+                        <li>Chat Docs is the most reliable platform for interacting with your documents </li>
+                        <li><i class="fa fa-location-dot"></i>Address : PO Box W75 Winx Street West Virgina</li>
+                        <li><i class="fa fa-headphones"></i>Phone : +233 34 000 0/li>
+                        <li><i class="fa fa-envelope"></i>Email : example@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>PRODUCTS</h4>
+                    <ul>
+                        <li>Graphics (20)</li>
+                        <li>Controllers (11)</li>
+                        <li>Vengence Tower (18)</li>
+                        <li>Play station (22)</li>
+                        <li>X Box 360 (30)</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>NEED HELP?</h4>
+                    <ul>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li>Refund Policy</li>
+                        <li>Affiliate</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>FOLLOW CHAT DOCS</h4>
+                    <ul>
+                        <li>
+                            <div class="social">    
+                                <div class="icon">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                                <div class="icon">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                                <div class="icon">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                                <div class="icon">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li>You can follow us on any of our social media platforms listed above and lets talk <strong>GAMES</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <img src="img/footer_fire.png" alt="fire" class="footer_fire">
+        <img src="img/footer_fire.png" alt="fire" class="footer_fire footer_fire2">
+    </footer>
+
+       
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+           <script>
+        
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: true,
+                breakpoints: {
+                    500: {
+                        slidesPerView: 4
+                    },
+                    900: {
+                        slidesPerView: 5
+                    }
+                }
+            });
+
+            var swiper = new Swiper(".mySwiper1", {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+            },
+        });
+
+            let bars = document.querySelector("#bars") 
+            let menu = document.querySelector("#menu") 
+
+            bars.addEventListener("click",()=>{
+                menu.classList.toggle("openmenu")
+            })
+        </script>
+
+
+</body>
+
+</html>
