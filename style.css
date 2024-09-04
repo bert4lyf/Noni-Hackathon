@@ -101,7 +101,7 @@ body{
 .hero{
     height:auto;
     width: 100%;
-    background-image: url(keyboard.jpg);
+    background-image: url(img/keyboard.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
